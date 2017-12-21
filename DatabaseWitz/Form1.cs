@@ -69,6 +69,7 @@ namespace DatabaseWitz
         {
             while(reader.Read()==true)
             {
+                //hailo
 
                 //String bez= reader.GetString(3);
                 Artikel a = mkArtikelObject(reader);
@@ -130,6 +131,8 @@ namespace DatabaseWitz
                 {
       
                     UpdateArtikel(a);
+                    listBoxAusgabe.DataSource = null;
+                    listBoxAusgabe.DataSource = artikelList;
                 }
                 else
                 {
